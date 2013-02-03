@@ -20,6 +20,26 @@ alias s="subl ."
 alias o="open"
 alias oo="open ."
 
+alias ssh="ssh -X"
+alias md="mkdir -p"
+alias rd="rmdir"
+alias df="df -h"
+alias mv="mv -i"
+alias slink="link -s"
+alias sed="sed -E"
+alias l="ls -l"
+alias la="ls -lhAF"
+alias ll="ls -lhF"
+alias lt="ls -lhtrF"
+alias l.="ls -lhtrdF .*"
+alias zb="cat /dev/urandom | hexdump -C | grep --color=auto \"ca fe\""
+alias gs="git status"
+alias ga='git add'
+alias gpl="git pull"
+alias gps="git push"
+alias gc="git commit -m"
+alias pg="ps -e -o pid,command | grep"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
