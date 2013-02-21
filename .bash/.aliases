@@ -36,6 +36,7 @@ alias ga='git add'
 alias gpl="git pull"
 alias gps="git push"
 alias gc="git commit -m"
+alias glog="git lg"
 alias pg="ps -e -o pid,command | grep"
 
 # Detect which `ls` flavor is in use
