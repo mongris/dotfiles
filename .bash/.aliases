@@ -31,6 +31,7 @@ alias ll="ls -lhF"
 alias lt="ls -lhtrF"
 alias l.="ls -lhtrdF .*"
 alias zb="cat /dev/urandom | hexdump -C | grep --color=auto \"ca fe\""
+alias gcl="git c"
 alias gs="git status"
 alias ga='git add'
 alias gpl="git pull"
