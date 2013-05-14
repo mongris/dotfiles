@@ -2,7 +2,8 @@
 [ -d "$HOME/bin" ] && export PATH="$HOME/bin:$PATH";
 [ -d "$HOME/.rvm/bin" ] && export PATH="$HOME/.rvm/bin:$PATH";
 [ -d "/usr/local/opt/coreutils/libexec/gnubin" ] && export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH";
-[ -d "/usr/local/share/npm/bin/" ] && export PATH="/usr/local/share/npm/bin/:$PATH";
+[ -d "/usr/local/share/npm/bin" ] && export PATH="/usr/local/share/npm/bin:$PATH";
+[ -d "/usr/local/sbin" ] && export PATH="/usr/local/sbin:$PATH";
 
 # remove duplicates from the path
 export PATH=`awk -F: '{for(i=1;i<=NF;i++){if(!($i in a)){a[$i];printf s$i;s=":"}}}'<<<$PATH`;
