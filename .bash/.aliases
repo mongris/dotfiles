@@ -42,6 +42,9 @@ alias gsub="git submodule"
 alias gsubpl="git submodule foreach git pull origin master"
 alias pg="ps -e -o pid,command | grep"
 
+alias bss="brew services start"
+alias bst="brew services stop"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
