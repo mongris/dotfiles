@@ -4,9 +4,7 @@
 brew update
 
 # Upgrade any already-installed formulae
-brew upgrade
-
-brew install autoconf automake
+brew upgrade --all
 
 # Install GNU core utilities (those that come with OS X are outdated)
 brew install coreutils
@@ -14,7 +12,11 @@ echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH.
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
 # Install Bash 4
+# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
+# running `chsh`.
 brew install bash
+brew tap homebrew/versions
+brew install bash-completion2
 
 # Install wget with IRI support
 brew install wget --enable-iri
@@ -22,7 +24,6 @@ brew install wget --enable-iri
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
-brew install homebrew/dupes/apple-gcc42
 
 # Remove outdated versions from the cellar
 brew cleanup
