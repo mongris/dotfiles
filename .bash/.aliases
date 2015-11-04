@@ -15,7 +15,7 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 alias s="subl ."
-alias a="a ."
+alias a="atom ."
 alias o="open"
 alias oo="open ."
 
