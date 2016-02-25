@@ -17,6 +17,7 @@ brew install findutils
 brew install bash
 brew tap homebrew/versions
 brew install homebrew/versions/node4-lts
+brew install homebrew/versions/postgresql94
 brew install bash-completion2
 
 # Install wget with IRI support
