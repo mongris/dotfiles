@@ -72,6 +72,7 @@
 	# Prevent showing files whose names contain non-ASCII symbols as unversioned.
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
+	editor = atom --wait
 
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
@@ -92,10 +93,10 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
-	tool = sublime
+	tool = atom
 
-[mergetool "sublime"]
-	cmd = subl -w $MERGED
+[mergetool "atom"]
+	cmd = atom -w $MERGED
 	trustExitCode = false
 
 # Use `origin` as the default remote on the `master` branch in all cases
