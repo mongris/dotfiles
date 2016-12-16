@@ -16,12 +16,10 @@ brew install findutils
 # running `chsh`.
 brew install bash
 brew tap homebrew/versions
-brew install homebrew/versions/node4-lts
 brew install homebrew/versions/postgresql94
-brew install bash-completion2
 
 # Install wget with IRI support
-brew install wget --enable-iri
+brew install wget --with-iri
 
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
