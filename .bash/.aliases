@@ -14,7 +14,7 @@ alias p="cd ~/Projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
-alias a="atom ."
+alias a="code ."
 alias o="open"
 alias oo="open ."
 
@@ -41,6 +41,8 @@ alias gl="git l"
 alias gsub="git submodule"
 alias gsubpl="git submodule foreach git pull origin master"
 alias pg="ps -e -o pid,command | grep"
+
+alias yui="yarn upgrade-interactive"
 
 alias bss="brew services start"
 alias bst="brew services stop"

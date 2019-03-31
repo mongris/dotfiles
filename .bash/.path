@@ -4,6 +4,9 @@
 [ -d "/usr/local/opt/coreutils/libexec/gnubin" ] && export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH";
 [ -d "/usr/local/share/npm/bin" ] && export PATH="/usr/local/share/npm/bin:$PATH";
 [ -d "/usr/local/sbin" ] && export PATH="/usr/local/sbin:$PATH";
+[ -d "$HOME/Library/Python/2.7/bin" ] && export PATH="$HOME/Library/Python/2.7/bin:$PATH";
+[ -d "/usr/local/opt/node@10/bin" ] && export PATH="/usr/local/opt/node@10/bin:$PATH";
+
 
 # remove duplicates from the path
 export PATH=`awk -F: '{for(i=1;i<=NF;i++){if(!($i in a)){a[$i];printf s$i;s=":"}}}'<<<$PATH`;
