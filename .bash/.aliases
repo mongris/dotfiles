@@ -44,6 +44,8 @@ alias pg="ps -e -o pid,command | grep"
 
 alias yui="yarn upgrade-interactive"
 
+alias drmi="docker images | grep none | awk '{ print $3; }' | xargs docker rmi"
+
 alias bss="brew services start"
 alias bst="brew services stop"
 
