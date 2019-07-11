@@ -93,11 +93,7 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
-	tool = atom
-
-[mergetool "atom"]
-	cmd = atom -w $MERGED
-	trustExitCode = false
+	tool = code
 
 # Use `origin` as the default remote on the `master` branch in all cases
 [branch "master"]
@@ -129,3 +125,13 @@
 	default = matching
 	# Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[mergetool "code"]
+	cmd = code -w $MERGED
+	trustExitCode = false
